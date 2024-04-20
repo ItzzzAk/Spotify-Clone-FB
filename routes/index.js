@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Define routes
 router.get('/', (req, res) => {
-    res.render('index'); // Render homepage template
+    res.render('login'); // Render homepage template
 });
 
 // Require and use other route files if needed

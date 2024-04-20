@@ -1,7 +1,6 @@
-// Require necessary modules
 const express = require('express');
 const expressSession = require('express-session'); 
-const databaseConfig = require('./config/databse'); // Corrected typo in database
+const databaseConfig = require('./config/database'); 
 const app = express();
 
 // Require the route handlers
@@ -11,18 +10,19 @@ const loginRoute = require('./routes/login');
 
 // Middleware
 app.use("/static", express.static('public'));
-app.use('/signup', signupRoute);
-app.use("/login" , loginRoute)
-
-
-
-app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.use(expressSession({
     secret: 'secret',
     resave: true,
     saveUninitialized: true
 }));
+
+// Use routes
+app.use('/signup', signupRoute);
+app.use("/login", loginRoute);
+
+// Set view engine
+app.set('view engine', 'ejs');
 
 // Set up routes
 app.use('/', indexRoute);

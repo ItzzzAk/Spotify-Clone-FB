@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav {
+  padding: 0px 50px;
+  width: 100%;
+  height: 100px;
+  background: #121212;
+}
+
+nav img {
+  width: 150px;
+}
+
+main {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  background-image: linear-gradient(#272727, #020202);
+  padding-top: 30px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 55%;
+  min-height: 100vh;
+  background: #121212;
+}
+
+#heading {
+  margin: 50px 0 50px 0;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+}
+
+#heading h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#options {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+#options .box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #a9a9a9a2;
+  border-radius: 50px;
+  transition: 0.1s;
+}
+
+#options .box:hover {
+  border: 1px solid #fff;
+}
+
+#options .box .logo {
+  width: 20px;
+  height: 20px;
+}
+
+#options .box .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#options .box h4 {
+  width: 68%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#options .box:nth-child(4) h4 {
+  width: 100%;
+  text-align: center;
+}
+
+#line {
+  margin-bottom: 50px;
+  width: 80%;
+  height: 1px;
+  background: #292929;
+}
+
+#fstblck,
+#sndblck {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#fstblck > span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#fstblck > input,
+#sndblck > input {
+  padding: 10px 10px;
+  width: 300px;
+  height: 45px;
+  background: none;
+  border: 1px solid #a9a9a9a2;
+  border-radius: 3px;
+  color: white;
+  transition: 0.1s;
+  font-size: 1vw;
+  font-weight: 500;
+  margin-bottom: 10px;
+  outline: none;
+  position: relative;
+}
+
+
+
+#fstblck > input:focus,
+#sndblck > input:focus {
+  outline: 2px solid white;
+}
+
+#fstblck > input:focus + #sndblck > input,
+#sndblck > input:focus + #fstblck > input {
+  outline: none;
+}
+
+#fstblck > input::placeholder,
+#sndblck > input::placeholder {
+  font-size: 1.1vw;
+  color: #a7a7a7;
+  font-weight: 300;
+}
+
+
+.switch {
+  margin-top: 10px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#switchbox {
+  border-radius: 50px;
+  width: 36px;
+  height: 18px;
+  background: #727272;
+}
+
+#dot {
+  margin: 2px 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #121212;
+}
+
+.switch span {
+  font-size: 0.9vw;
+  font-weight: 100;
+}
+
+#btn {
+  margin-top: 25px;
+  width: 100%;
+  height: fit-content;
+}
+
+#btn button {
+  border: none;
+  color: black;
+  border-radius: 50px;
+  padding: 0.9vw 9.4vw;
+  background: #1ed760;
+  font-weight: 600;
+  font-size: 1.2vw;
+  transition: .5s ;
+}
+
+#btn:hover {
+  transform: scale(1.03);
+}
+
+#frgt{
+  margin-bottom: 25px;
+  margin-top: 30px;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+
+#frgt span{
+  text-decoration: underline;
+  font-size: 1.1vw;
+  font-weight: 300;
+  transition: .1s;
+}
+
+#frgt span:hover{
+  color: #1ED760;
+}
+
+section > #line2{
+  width: 80%;
+  height: 1px;
+  background: #292929;
+}
+
+
+#btm{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btm > span{
+  font-size: 1.1vw;
+  font-weight: 300;
+  color:#a7a7a7 ;
+}
+
+#btm > span > a{
+  font-weight: 100;
+  transition: .1s;
+}
+
+#btm > span > a:hover{
+  color: #1ed760;
+}
+
+footer {
+  margin-top: 40px;
+  width: 100%;
+  height: 90px;
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+footer > span{
+  color: #A7A7A7;
+  font-weight: 400;
+  font-size: .8vw;
+}
+
+footer > span > a{
+  color: #A7A7A7;
+
+}

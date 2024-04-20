@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background: #121212;
+}
+
+nav {
+  padding: 0vw 1.5vw;
+  width: 100%;
+  height: 90px;
+}
+
+nav > img {
+  width: 7vw;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 90px);
+  padding-left: 160px;
+}
+
+#cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title h1 {
+  width: 70%;
+  font-size: 2.1vw;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#fstblck {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#fstblck > span {
+  font-size: 0.7vw;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#fstblck > input {
+  padding: 10px 10px;
+  width: 320px;
+  height: 45px;
+  background: none;
+  border: 1px solid #a9a9a9a2;
+  border-radius: 3px;
+  color: white;
+  transition: 0.1s;
+  font-size: 0.75vw;
+  font-weight: 500;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+#fstblck > input:hover {
+  border: 1px solid #fff;
+}
+
+#fstblck > a {
+  font-size: 0.7vw;
+  margin-bottom: 15px;
+  color: #1ed760;
+}
+
+#fstblck > button {
+  cursor: pointer;
+  width: 320px;
+  height: 45px;
+  background: #1ed760;
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  font-size: 0.8vw;
+  font-weight: 600;
+}
+
+#sndblck {
+  margin-top: 25px;
+}
+
+#fstelem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#fstelem > #line {
+  width: 150px;
+  height: 1px;
+  background: #a9a9a9a2;
+}
+
+#fstelem > h6 {
+  font-size: 0.7vw;
+  font-weight: 400;
+}
+
+#fstelem > #line2 {
+  width: 150px;
+  height: 1px;
+  background: #a9a9a9a2;
+}
+
+#sndelem {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#sndelem .box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 320px;
+  height: 50px;
+  border: 1px solid #a9a9a9a2;
+  border-radius: 50px;
+  transition: 0.1s;
+}
+
+#sndelem .box:hover {
+  border: 1px solid #fff;
+}
+
+#sndelem .box .logo {
+  width: 20px;
+  height: 20px;
+}
+
+#sndelem .box .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#sndelem .box h4 {
+  width: 60%;
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+#trdelem > #line3 {
+  width: 320px;
+  height: 1px;
+  background: #a9a9a9a2;
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+
+#trdelem {
+  width: 320px;
+  height: 45px;
+  text-align: center;
+}
+
+#trdelem h5 {
+  font-size: 0.75vw;
+  font-weight: 400;
+  color: #a9a9a9;
+}
+
+#footer {
+  margin-top: 150px;
+  width: 60%;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  line-height: 1;
+}
+
+#footer span {
+  font-size: 0.55vw;
+  color: #a9a9a9a2;
+  font-weight: 100;
+}
+
+#footer span > a {
+  color: #a9a9a9a2;
+}
+
+@media screen and (max-width: 1366px) {
+  nav > img {
+    width: 10vw;
+  }
+
+  main {
+    width: 100%;
+    height: fit-content;
+    padding: 0px;
+    background: #121212;
+  }
+
+  #cont {
+    margin: 0 auto;
+    width: 27%;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  #title {
+    width: 90%;
+    height: fit-content;
+  }
+
+  #title h1 {
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 800;
+  }
+
+  #fstblck span {
+    font-size: 1vw;
+    font-weight: 600;
+  }
+
+  #fstblck > input {
+    font-size: 1vw;
+    outline: none;
+  }
+
+  #fstblck > a {
+    font-size: 0.9vw;
+  }
+
+  #fstblck > button {
+    font-size: 1.2vw;
+  }
+
+  #fstelem > h6 {
+    font-size: 1vw;
+    font-weight: 500;
+  }
+
+  #sndelem {
+    width: 100%;
+    height: fit-content;
+  }
+
+  #sndelem .box h4 {
+    font-size: 1vw;
+    font-weight: 700;
+  }
+
+  #trdelem > #line3 {
+    width: 320px;
+    height: 1px;
+    background: #a9a9a9a2;
+    opacity: 0.5;
+    margin-top: 30px;
+  }
+
+  #footer {
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer > span {
+    width: 26%;
+    text-align: center;
+    font-size: 0.9vw;
+    color: #a9a9a9a2;
+    font-weight: 100;
+  }
+
+  #footer > span > a {
+    color: #a9a9a9a2;
+  }
+}
