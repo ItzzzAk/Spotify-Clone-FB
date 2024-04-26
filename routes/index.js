@@ -1,13 +1,19 @@
 const express = require('express');
 const router = express.Router();
 
-// Define routes
+// Require signup and login routes
+router.use('/signup', require('./signup'));
+router.use('/login', require('./login'));
+
+// Render index.ejs for the default route '/'
 router.get('/', (req, res) => {
-    res.render('login'); // Render homepage template
+    res.render('index'); // Render the index page
 });
 
-// Require and use other route files if needed
-router.use('/auth', require('./auth'));
-router.use('/api', require('./api'));
+// Main page route
+router.get('/main-page', (req, res) => {
+    res.render('main'); // Render the main page
+});
 
 module.exports = router;
+

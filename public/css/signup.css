@@ -278,7 +278,7 @@ main {
   }
 
   #footer {
-    margin: 0;
+    margin: 8vw 0 0 0;
     width: 100%;
     height: 100px;
     display: flex;
@@ -298,3 +298,401 @@ main {
     color: #a9a9a9a2;
   }
 }
+
+/* Steps for Sign In Styling Here */
+
+#step2 {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#progress {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 32%;
+  height: 2px;
+  background: #727272;
+  display: inline-block;
+}
+
+#thrdblck {
+  width: 30%;
+  min-height: 100%;
+  /* background: yellow; */
+}
+
+#state {
+  margin: 0.9vw 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: fit-content;
+  /* background: green; */
+}
+
+#navi img {
+  width: 20px;
+}
+
+#stateinfo span:nth-child(1) {
+  font-size: 1.1vw;
+  font-weight: 400;
+  color: #a7a29e;
+}
+
+#stateinfo span:nth-child(3) {
+  font-size: 1.1vw;
+  font-weight: 600;
+  color: white;
+}
+
+form {
+  margin-top: 2vw;
+  width: 100%;
+  height: 100%;
+  padding: 0vw 2.2vw;
+}
+
+form > span {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+form > input {
+  padding: 10px 10px;
+  width: 320px;
+  height: 50px;
+  background: none;
+  border: 1px solid #a9a9a9a2;
+  border-radius: 3px;
+  color: white;
+  transition: 0.1s;
+  font-size: 1.1vw;
+  font-weight: 500;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+#progress-check {
+  width: 100%;
+  height: fit-content;
+  /* background: yellow; */
+}
+
+#info {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1vw;
+}
+
+#info > span {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.check {
+  margin-bottom: 0.5vw;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: fit-content;
+  /* background: red; */
+}
+
+.check .dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.check .dot > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.check span {
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+form > button {
+  margin-top: 2vw;
+  padding: 10px 10px;
+  width: 320px;
+  height: 50px;
+  border: none;
+  background: #1ed760;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  transition: 0.1s;
+  font-size: 1.1vw;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+#step3 {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#frthblck {
+  width: 30%;
+  min-height: 100%;
+}
+
+#frthblck form {
+  width: 100%;
+  height: 100%;
+}
+#name {
+  width: 100%;
+  height: fit-content;
+  line-height: 1.2;
+}
+
+#name > span {
+  font-size: 1vw;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#name > span:nth-child(3) {
+  font-size: 0.9vw;
+  font-weight: 500;
+  color: #a7a29e;
+  text-transform: none;
+}
+
+#name > input {
+  margin-top: 1vw;
+  padding: 10px 10px;
+  width: 320px;
+  height: 50px;
+  background: none;
+  border: 1px solid #a9a9a9a2;
+  border-radius: 3px;
+  color: white;
+  transition: 0.1s;
+  font-size: 1vw;
+  font-weight: 500;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+#dob {
+  width: 100%;
+  height: fit-content;
+  line-height: 1.2;
+}
+
+#dob > span {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+#dob > span:nth-child(3) {
+  font-size: 0.9vw;
+  font-weight: 500;
+  color: #a7a29e;
+  text-transform: none;
+}
+
+#dob > span:nth-child(3) a {
+  color: #a7a29e;
+}
+
+#dob > input {
+  margin-top: 1vw;
+  padding: 10px 10px;
+  width: 90px;
+  height: 50px;
+  font-size: 1vw;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+#dob > select {
+  margin-top: 1vw;
+  width: 150px;
+  height: 50px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+  padding: 10px 10px;
+}
+
+#dob > select > option {
+  background: #121212;
+}
+
+#dob input:nth-child(6) {
+  margin-top: 1vw;
+  width: 70px;
+  height: 50px;
+}
+
+#gender {
+  margin-top: 1vw;
+  width: 100%;
+  height: fit-content;
+  line-height: 1.5;
+}
+
+#gender > span {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+#gender > span:nth-child(3) {
+  width: 70;
+  display: block;
+  font-size: 0.9vw;
+  font-weight: 500;
+  color: #a7a29e;
+  text-transform: none;
+}
+
+.radio {
+  font-size: 1vw;
+  font-weight: 500;
+  vertical-align: middle;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+
+.radio + .radio {
+  margin-left: 20px;
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
+
+.radio span {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: block;
+  top: 0;
+  left: 0;
+  border: 1px solid gray;
+}
+
+.radio span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border: 3px solid #1ed760;
+  display: block;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 300ms ease;
+}
+
+.radio input[type="radio"]:checked ~ span:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#radio-groups {
+  margin-top: 1vw;
+}
+
+
+form button{
+  margin-top: 2vw;
+  padding: 10px 10px;
+  width: 320px;
+  height: 50px;
+  border: none;
+  background: #1ed760;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  transition: 0.1s;
+  font-size: 1.1vw;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+
+#step4{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#fifthblck {
+  width: 30%;
+  min-height: 100%;
+}
+
+
+#wraper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 50%;
+
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: #232323;
+  border-radius: 5px;
+}
+
+.cubeb{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cube{
+  flex-shrink: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  box-sizing: border-box; 
+}
+
+

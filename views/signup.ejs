@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify Sign Up</title>
-    <link rel="stylesheet" href="/static/css/signup.css" />
-  </head>
-  <body>
-    <div id="main">
-      <nav>
-        <img src="/static/Images/spotify logo.png" alt="" />
-      </nav>
-      <main>
-        <div id="cont">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Sign Up</title>
+  <link rel="stylesheet" href="/static/css/signup.css" />
+</head>
+
+<body>
+  <div id="main">
+    <nav>
+      <img src="/static/Images/spotify logo.png" alt="" />
+    </nav>
+    <main>
+      <div id="cont">
           <div id="title">
             <h1>Sign up to start listening</h1>
           </div>
           <form action="">
-            <div id="fstblck">
+            <div id="fstblck" class="step-1">
               <span>Email address</span>
-              <input
+              <input name="email"
                 type="text"
                 id="emailAddress"
                 placeholder="name@domain.com"
@@ -63,15 +65,190 @@
             </div>
           </form>
         </div>
-        <div id="footer">
-          <span
-            >This site is protected by reCAPTCHA and the Google
-            <a href="#">Privacy Policy</a> and
-            <a href="#">Terms of Service </a>apply.</span
-          >
+
+
+      <!-- <div id="step2" >
+        <div id="progress">
+          <div class="progress-bar"></div>
         </div>
-      </main>
+        <div id="thrdblck">
+
+          <div id="state">
+            <div id="navi">
+              <img src="/static/Images/Icons/back.png" alt="">
+            </div>
+            <div id="stateinfo">
+              <span>Step 1 of 3</span> <br>
+              <span>Create a Password</span>
+            </div>
+  
+          </div>
+          <form action="" id="step2form">
+            <span>Password</span> <br>
+            <input type="password" id="password" name="password" required />
+            <div id="progress-check">
+              <div id="info">
+                <span>Your password must contain at least</span>
+              </div>
+              <div class="check">
+                <div class="dot">
+                  <img src="/static/Images/Icons/tick.png" alt="">
+                </div>
+                <span>1 letter</span>
+              </div>
+              <div class="check">
+                <div class="dot">
+                  <img src="/static/Images/Icons/tick.png" alt="">
+                </div>
+                <span>1 number or special character (example: # ? ! &)</span>
+              </div>
+              <div class="check">
+                <div class="dot">
+                  <img src="/static/Images/Icons/tick.png" alt="">
+                </div>
+                <span>10 characters</span>
+              </div>
+            </div>
+            <button type="submit">Next</button>
+          </form>
+        </div>
+      </div>  -->
+
+
+      <!-- <div id="step3" >
+        <div id="progress">
+          <div class="progress-bar"></div>
+        </div>
+
+        <div id="frthblck">
+          <div id="state">
+            <div id="navi">
+              <img src="/static/Images/Icons/back.png" alt="">
+            </div>
+            <div id="stateinfo">
+              <span>Step 2 of 3</span> <br>
+              <span>Tell us about yourself</span>
+            </div>
+
+          </div>
+          <form action="">
+            <div id="name">
+              <span>name</span> <br>
+              <span>This name will appear on your profile</span> <br>
+              <input type="text">
+            </div>
+
+            <div id="dob">
+              <span>Date of birth</span> <br>
+              <span>Why do we need your date of birth? <a href="#">Learn more.</a></span>
+
+              <input type="text" id="year" name="year" inputmode="numeric" pattern="[0-9]{4}" maxlength="4"
+                placeholder="yyyy" required>
+              <select id="month" name="month" required>
+                <option value="">Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <input type="text" id="date" name="date" inputmode="numeric" pattern="[0-9]{1,2}" maxlength="2"
+                placeholder="DD" required>
+            </div>
+
+            <div id="gender">
+              <span>Gender</span> <br>
+              <span>We use your gender to help personalize our content recommendations and ads for you.</span>
+
+              <div id="radio-groups">
+               <label class="radio">
+                <input type="radio" name="gender" value="Male" id="">
+                Male
+                <span></span>
+              </label>
+               <label class="radio">
+                <input type="radio" name="gender" value="Male" id="">
+                Female
+                <span></span>
+              </label>
+               <label class="radio">
+                <input type="radio" name="gender" value="Male" id="">
+                Prefer not to say
+                <span></span>
+              </label>
+              </div>
+            </div>
+            <button type="submit">Next</button>
+          </form>
+        </div>
+      </div> -->
+
+
+<!-- 
+
+      <div id="step4">
+        <div id="progress">
+          <div class="progress-bar"></div>
+        </div>
+
+
+        <div id="fifthblck">
+          <div id="state">
+            <div id="navi">
+              <img src="/static/Images/Icons/back.png" alt="">
+            </div>
+            <div id="stateinfo">
+              <span>Step 3 of 3</span> <br>
+              <span>Terms & Conditions</span>
+            </div>
+
+          </div>
+          <div id="wraper">
+            <div class="box">
+              <div class="cubeb">
+                
+                <div class="cube">
+                  <img src="" alt="">
+                </div>
+              </div>
+             <span>I would prefer not to receive marketing messages from Spotify.</span>
+            </div>
+            <div class="box">
+              <div class="cubeb">
+                
+                <div class="cube">
+                  <img src="" alt="">
+                </div>
+              </div>
+             <span>Share my registration data with Spotify's content providers for marketing purposes.</span>
+            </div>
+          </div>
+          <span>By clicking on sign-up, you agree to Spotify's <a href="#">Terms and Conditions of Use.</a></span>
+          <span>To learn more about how Spotify collects, uses, shares and protects your personal data, please see <a href="#">Spotify's Privacy Policy.</a></span>
+          <button type="submit">Sign Up</button>
+        </div>
+
+      </div>
+
+
+ -->
+
+
+    </main>
+    <div id="footer">
+      <span>This site is protected by reCAPTCHA and the Google
+        <a href="#">Privacy Policy</a> and
+        <a href="#">Terms of Service </a>apply.</span>
     </div>
-    <script src="/static/js/client.js"></script>
-  </body>
+  </div>
+  <script src="/static/js/client.js"></script>
+</body>
+
 </html>
